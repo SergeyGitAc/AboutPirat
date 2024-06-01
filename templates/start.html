@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>СЕРЕГА ПИРАТ (SEREGA PIRAT)</title>
+{% endblock %}
+
+
+{% block body %}
+<style>
+
+  .box_shadow_{
+    box-shadow: 0px 5px 10px 0px rgba(90, 71, 156, 0.5);
+    border-radius: 10%;
+     padding: 10px 10px 10px 10px;
+
+  }
+  .text{
+      padding: 50px 30px 60px 10px;
+  }
+    p {
+    text-indent: 20px;
+   }
+
+
+
+</style>
+
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSheet">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-bottom-0">
+        <h1 class="modal-title fs-5">ДИСКЛЕЙМЕР</h1>
+      </div>
+      <div class="modal-body py-0">
+
+        <p>На сайте присутвует ненормативная лексика. Детишкам сюда вход воспрещён.</p>
+                <img class="mb-2 box_shadow_" src="https://i1.sndcdn.com/artworks-ixOkMrta3LsK6PHo-yyBjFw-t500x500.jpg" alt="" width="200" height="200" align="left">
+        <p class="text">Если тебе нет 18 лет то я тебя не пропускаю.</p>
+
+      </div>
+      <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+          <a href="/index"><button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">Мне есть 18 лет</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
