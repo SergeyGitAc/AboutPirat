@@ -6,5 +6,59 @@
 
 
 {% block body %}
+<style>
+
+    .box_shadow_{
+      box-shadow: 0px 5px 10px 0px rgba(90, 71, 156, 0.5); 
+      border-radius: 10%;
+       padding: 10px 10px 10px 10px;
+  
+    }
+    .text{
+        padding: 50px 30px 60px 10px;
+    }
+      p {
+      text-indent: 20px;
+     }
+  </style>
+<div class="p-3 pb-md-4">
+    <div class="card-header py-3">
+
+        <h4 class="my-0 fw-normal">Разработчики</h4>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+    <div class="col">
+
+        <div class="card mb-4 rounded-3 shadow-sm">
+
+            <div class="card-header py-3">
+
+                <h4 class="my-0 fw-normal">Серега Батон</h4>
+            </div>
+            <div class="card-body">
+                <img class="mb-2 box_shadow_" src="https://sun9-63.userapi.com/impg/s0UhpAF_OIqneh23Nt-h9Chh749Hg_og6-gbVA/iGLZi7D9K38.jpg?size=723x717&quality=96&sign=9639a09f7e50f8019a90022640ec68ab&type=album" alt="" width="350" height="350">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+
+        <div class="card mb-4 rounded-3 shadow-sm">
+
+            <div class="card-header py-3">
+
+                <h4 class="my-0 fw-normal">Кирилл Спиров aka Кирпич </h4>
+            </div>
+            <div class="card-body">
+                <img class="mb-2 box_shadow_" src="https://media.discordapp.net/attachments/790620081314857013/1191126225192751215/Opera__2024-01-01_000816_ya.ru.png?ex=665e313e&is=665cdfbe&hm=cd12b245a3d0c0c0ad80db28eaea49c3dd43d67cec141a46893b9a971f4d9cfe&=&format=webp&quality=lossless" alt="" width="350" height="350">
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 {% endblock %}
